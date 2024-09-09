@@ -1,5 +1,6 @@
 import axios from 'axios'
 
+
 const BaseUrl = 'http://localhost:3000/memes' // Cambia por la URL de tu API si es necesario
 
 // Obtener todos los memes
@@ -55,3 +56,8 @@ export const deleteMeme = async (id) => {
         throw error
     }
 }
+
+
+
+
+
