@@ -75,20 +75,20 @@ const Card = ({ meme, handleDelete, handleFlip, isFlipped }) => {
 
 
       {/* Parte trasera */}
-      <div className="absolute w-[300px] h-[350px] bg-white rounded-3xl p-2 z-10">
+      <div className="absolute lg:w-[300px] lg:h-[350px] sm:w-[150px] sm:h-[0px] bg-white rounded-3xl p-2 z-10">
         <div className="relative w-full h-full">
           <img
             src={meme.image}
             alt={meme.description}
-            className="absolute max-h-[320px] max-w-[290px] justify-center flex inset-0 object-cover rounded-3xl opacity-15"
+            className="absolute max-h-[320px] max-w-[290px]  justify-center flex inset-0 object-cover rounded-3xl opacity-15"
           />
-          <div className="relative max-h-[320px] max-w-[300px] p-4 z-10 bg-black/55 text-white top-2 rounded-3xl">
-            <h2 className="text-lg font-semibold text-start mt-12 mb-6">{meme.name}</h2>
-            <p className="text-base text-start mb-2">Description: {meme.description}</p>
-            <p className="text-base text-start mb-2">Fecha: {meme.date}</p>
-            <p className="text-base text-start">Likes: {meme.likes}</p>
-            
+          <div className="relative lg:max-h-[270px] lg:max-w-[300px] sm:max-h-[70px] sm:max-w-[200px] p-4 z-10 bg-black/55 text-white top-2 rounded-3xl">
+            <h2 className="lg:text-lg sm:text-sm font-semibold text-start mt-12 mb-6">{meme.name}</h2>
+            <p className="lg:text-base sm:text-xs text-start mb-2">Description: {meme.description}</p>
+            <p className="lg:text-base sm:text-xs text-start mb-2">Fecha: {meme.date}</p>
+            <p className="lg:text-base sm:text-xs text-start">Likes: {meme.likes}</p>
           </div>
+
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-2 flex justify-evenly">
           <button className="like">

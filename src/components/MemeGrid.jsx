@@ -32,19 +32,20 @@ const MemeGrid = ({ memes, onDelete }) => {
   const [flipped, setFlipped] = useState({});
   const gridRef = useRef(null);
 
-  useEffect(() => {
-    if (gridRef.current) {
-      const masonry = new Masonry(gridRef.current, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-item',
-        percentPosition: true,
-        gutter: 20, // Espaciado entre los elementos
-      });
+useEffect(() => {
+  if (gridRef.current && window.innerWidth > 640) { // Solo aplicar Masonry en pantallas grandes
+    const masonry = new Masonry(gridRef.current, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-item',
+      percentPosition: true,
+      gutter: 20,
+      
+    });
 
-      // Destruir Masonry al desmontar el componente
-      return () => masonry.destroy();
-    }
-  }, [memes]);
+    return () => masonry.destroy();
+  }
+}, [memes]);
+
 
   const handleFlip = (id) => {
     setFlipped((prevState) => ({
@@ -66,13 +67,14 @@ const MemeGrid = ({ memes, onDelete }) => {
         justifyContent: 'flex-center',
         '@media (max-width: 640px)': {
           flexDirection: 'column', // Para pantallas pequeñas, todas las tarjetas estarán en una columna
+      
         },
       }}
     >
       {patternedMemes.map((meme) => (
         <div
           key={meme.id}
-          className="grid-item"
+          className="grid-item w-full sm:w-1/2 md:w-1/3 p-2"
           style={{
             // marginTop: `${meme.randomMarginTop}px`,
             // marginBottom: `${meme.randomMarginBottom}px`,
