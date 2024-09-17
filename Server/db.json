@@ -118,13 +118,11 @@
       "likes": 9918
     },
     {
-      "id": "202",
-      "name": "Crisis Existencial Gatuna",
+      "name": "Crisis Existencial Gatuno",
       "description": "¡A las 3 de la mañana! Cuando te das cuenta de que la caja de arena está más limpia que tu habitación y empiezas a cuestionar tus decisiones de vida.",
       "category": "gatos_siendo_humanos2",
       "image": "/src/assets/gatos-siendo-humanos2/humanos202.jpg",
-      "date": "2024-11-21",
-      "likes": 34268
+      "id": "202"
     },
     {
       "id": "203",

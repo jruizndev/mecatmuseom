@@ -15,9 +15,9 @@ const generatePattern = (memes) => {
     { gridRow: 5, gridColumn: 3 },
   ];
 
-  return memes.map((meme, index) => {
-    const randomMarginTop = Math.floor(Math.random() * 80);
-    const randomMarginBottom = Math.floor(Math.random() * 30) + 30;
+    return memes.map((meme, index) => {
+        const randomMarginTop = Math.floor(Math.random() * 120) + 0 // Márgen superior aleatorio
+        const randomMarginBottom = Math.floor(Math.random() * 120) + 30 // Márgen inferior aleatorio
 
     if (index < positions.length) {
       const position = positions[index];
@@ -28,7 +28,7 @@ const generatePattern = (memes) => {
   });
 };
 
-const MemeGrid = ({ memes, onDelete }) => {
+const MemeGrid = ({ memes, onDelete, onEdit, onLike }) => {
   const [flipped, setFlipped] = useState({});
   const gridRef = useRef(null);
 
@@ -87,6 +87,8 @@ const MemeGrid = ({ memes, onDelete }) => {
             handleDelete={onDelete}
             handleFlip={() => handleFlip(meme.id)} // Asegúrate de pasar la función correctamente
             isFlipped={flipped[meme.id] || false} // Pasamos el estado de volteo
+            handleEdit={onEdit}
+            handleLike={onLike}
           />
         </div>
       ))}
