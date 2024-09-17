@@ -1,13 +1,14 @@
-import { Outlet } from 'react-router-dom'
-
+import { Outlet } from 'react-router-dom';
+import Nav from '../components/Nav/Nav'; // Importa la barra de navegación
+import Footer from '../components/Footer';
 const Layout = () => {
-    return (
-        <>
-            <nav>Mi nav</nav>
-            <Outlet />
-            <footer>Mi footer</footer>
-        </>
-    )
-}
+  return (
+    <>
+      <Nav /> {/* Aquí se incluye la barra de navegación que creamos */}
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
-export default Layout
+export default Layout;
