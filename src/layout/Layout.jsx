@@ -2,18 +2,17 @@
 
 import { Outlet } from 'react-router-dom';
 import Nav from '../components/Nav/Nav';
-import Footer from '../components/Footer'
-import { FilterProvider } from '../layout/FilterContext'
-
+import Footer from '../components/Footer';
+import { FilterProvider } from '../layout/FilterContext';
 
 const Layout = () => {
-    return (
-        <FilterProvider>
-            <Nav />
-            <Outlet />
-            <Footer />
-        </FilterProvider>
-    )
-}
+  return (
+    <FilterProvider>
+      <Nav />
+      <Outlet />
+      <Footer />
+    </FilterProvider>
+  );
+};
 
-export default Layout
+export default Layout;
