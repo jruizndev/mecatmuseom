@@ -70,3 +70,4 @@ export const deleteMeme = async (id) => {
     throw error;
   }
 };
+

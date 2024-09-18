@@ -1,15 +1,6 @@
 {
   "memes": [
     {
-      "id": "101",
-      "name": "La Trampa de las Caricias",
-      "description": "¿Quién puede resistirse a unas buenas caricias? Ni siquiera el gato más independiente. ¡Maldita manipuladora!",
-      "category": "gatos_siendo_gatos1",
-      "image": "/src/assets/gatos-siendo-gatos1/gatos101.jpg",
-      "date": "2008-07-13",
-      "likes": 9918
-    },
-    {
       "id": "102",
       "name": "El Contador Felino",
       "description": "Cuando el gato se convierte en el administrador de la casa y toma decisiones difíciles. ¡Adiós, perro!",
@@ -25,7 +16,7 @@
       "category": "gatos_siendo_gatos1",
       "image": "/src/assets/gatos-siendo-gatos1/gatos103.jpg",
       "date": "2017-10-26",
-      "likes": 77049
+      "likes": 77050
     },
     {
       "id": "104",
@@ -52,7 +43,7 @@
       "category": "gatos_siendo_gatos1",
       "image": "/src/assets/gatos-siendo-gatos1/gatos106.jpg",
       "date": "2015-03-07",
-      "likes": 11979
+      "likes": 11980
     },
     {
       "id": "107",
@@ -73,13 +64,8 @@
       "likes": 87915
     },
     {
-      "id": "109",
-      "name": "¡Sorpresa Permanente!",
-      "description": "¡Este gato nació con cara de asombro! ¿Será que siempre está descubriendo algo nuevo?.",
-      "category": "gatos_siendo_gatos1",
-      "image": "/src/assets/gatos-siendo-gatos1/gatos109.jpg",
-      "date": "2009-09-05",
-      "likes": 70961
+      "likes": null,
+      "id": "109"
     },
     {
       "id": "110",
@@ -91,13 +77,8 @@
       "likes": 13456
     },
     {
-      "id": "111",
-      "name": "Tiburón Gatuno",
-      "description": "¡Alerta máxima! Este gatito lleva el drama a otro nivel. ¡Cuidado, que muerde! 😂",
-      "category": "gatos_siendo_gatos1",
-      "image": "/src/assets/gatos-siendo-gatos1/gatos111.jpg",
-      "date": "2022-09-22",
-      "likes": 9512
+      "likes": 9513,
+      "id": "111"
     },
     {
       "id": "112",
@@ -106,7 +87,7 @@
       "category": "gatos_siendo_gatos1",
       "image": "/src/assets/gatos-siendo-gatos1/gatos112.jpg",
       "date": "2010-01-26",
-      "likes": 52544
+      "likes": 52545
     },
     {
       "id": "201",
@@ -116,13 +97,6 @@
       "image": "/src/assets/gatos-siendo-humanos2/humanos201.jpg",
       "date": "2008-07-13",
       "likes": 9918
-    },
-    {
-      "name": "Crisis Existencial Gatuno",
-      "description": "¡A las 3 de la mañana! Cuando te das cuenta de que la caja de arena está más limpia que tu habitación y empiezas a cuestionar tus decisiones de vida.",
-      "category": "gatos_siendo_humanos2",
-      "image": "/src/assets/gatos-siendo-humanos2/humanos202.jpg",
-      "id": "202"
     },
     {
       "id": "203",

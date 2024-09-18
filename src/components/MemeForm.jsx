@@ -59,7 +59,11 @@ const MemeForm = ({ onSubmit, initialData, onClose, submitButtonText }) => {
 
   const onSubmitHandler = async (data) => {
     if (imageUrl) {
-      const memeData = { ...data, image: imageUrl };
+      const memeData = {
+        ...data,
+        image: imageUrl,
+        likes: initialData?.likes || 0, // Si estás editando un meme, conserva los likes actuales, si no, inicialízalos en 0
+      };
       try {
         await onSubmit(memeData);
         reset();
