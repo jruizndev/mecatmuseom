@@ -99,37 +99,49 @@ Después de clonar el proyecto, instala las dependencias necesarias:
 npm install
 ```
 ### 3. 🔩 Modificaciones archivo .env.example
-Configuración de Cloudinary y el archivo .env
-Renombrar .env.example a .env:
-Cambia el nombre del archivo env.example a .env en la raíz de tu proyecto. Este archivo contendrá tus credenciales sensibles.
+# Configuración de Cloudinary en el Proyecto
 
-Obtener las credenciales de Cloudinary:
-Una vez que te hayas registrado en Cloudinary, dirígete al Dashboard de Cloudinary y copia estos tres datos:
+Esta guía detalla cómo configurar Cloudinary en tu proyecto utilizando un archivo `.env` para almacenar de manera segura las credenciales sensibles. Asegúrate de seguir cada paso para completar la configuración correctamente.
 
-Cloud name
-API Key
-API Secret
-Agregar las credenciales al archivo .env:
-En tu archivo .env, coloca las siguientes variables de entorno con los valores que copiaste de Cloudinary:
+## 1. Renombrar `.env.example` a `.env`
 
-makefile
-Copiar código
+Primero, localiza el archivo `.env.example` en la raíz de tu proyecto y renómbralo a `.env`. Este archivo será utilizado para almacenar tus credenciales de Cloudinary y otras variables de entorno sensibles.
+
+```bash
+mv .env.example .env
+
+```
+## 2. Obtener las credenciales de Cloudinary
+
+Para integrar Cloudinary, necesitas crear una cuenta en [Cloudinary](https://cloudinary.com/). Una vez registrado, sigue estos pasos:
+
+1. Accede al [Dashboard de Cloudinary](https://cloudinary.com/console).
+2. Copia los siguientes valores:
+   - **Cloud Name**
+   - **API Key**
+   - **API Secret**
+
+## 3. Agregar las credenciales al archivo `.env`
+
+Una vez que tengas las credenciales de Cloudinary, agrégalas a tu archivo `.env` de la siguiente manera:
+
+```makefile
 CLOUDINARY_CLOUD_NAME=tu_cloud_name
 CLOUDINARY_API_KEY=tu_api_key
 CLOUDINARY_API_SECRET=tu_api_secret
-Verificar que .gitignore tenga .env:
-Asegúrate de que el archivo .gitignore ya contenga la línea .env, para que este archivo no se suba a GitHub y tus credenciales permanezcan seguras. Si no está, agrégalo:
 
-bash
-Copiar código
+## 4. Verificar que `.gitignore` tenga `.env`
+
+Asegúrate de que el archivo `.gitignore` ya contenga la línea `.env`, para que este archivo no se suba a GitHub y tus credenciales permanezcan seguras. Si no está, agrégala manualmente:
+
+```bash
 .env
-Instalar la dependencia dotenv:
-Si trabajas con Node.js, debes instalar dotenv para gestionar las variables de entorno. Usa el siguiente comando en tu terminal:
+## 5. Instalar la dependencia `dotenv`
 
-bash
-Copiar código
-npm install dotenv
-```
+Si trabajas con Node.js, debes instalar `dotenv` para gestionar las variables de entorno. Usa el siguiente comando en tu terminal:
+
+```bash
+npm install dotenv
 
 ### 4. 🚀 Inicia la aplicación:
 Inicia la aplicación en modo de desarrollo:
