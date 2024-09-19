@@ -129,19 +129,21 @@ Una vez que tengas las credenciales de Cloudinary, agrégalas a tu archivo `.env
 CLOUDINARY_CLOUD_NAME=tu_cloud_name
 CLOUDINARY_API_KEY=tu_api_key
 CLOUDINARY_API_SECRET=tu_api_secret
-
+```
 ## 4. Verificar que `.gitignore` tenga `.env`
 
 Asegúrate de que el archivo `.gitignore` ya contenga la línea `.env`, para que este archivo no se suba a GitHub y tus credenciales permanezcan seguras. Si no está, agrégala manualmente:
 
 ```bash
 .env
+```
 ## 5. Instalar la dependencia `dotenv`
 
 Si trabajas con Node.js, debes instalar `dotenv` para gestionar las variables de entorno. Usa el siguiente comando en tu terminal:
 
 ```bash
 npm install dotenv
+```
 
 ### 4. 🚀 Inicia la aplicación:
 Inicia la aplicación en modo de desarrollo:
