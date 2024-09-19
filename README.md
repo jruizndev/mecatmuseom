@@ -99,11 +99,36 @@ Después de clonar el proyecto, instala las dependencias necesarias:
 npm install
 ```
 ### 3. 🔩 Modificaciones archivo .env.example
-Para vincular el proyecto a Cloudinary, modifica el nombre del archivo para que se llame .env
-```bash
-INARY_CLOUD_NAME=nombre_de_tu_cuenta
-VITE_CLOUDINARY_API_KEY=tu_api_key
-VITE_CLOUDINARY_UPLOAD_PRESET=tu_upload_preset
+Configuración de Cloudinary y el archivo .env
+Renombrar .env.example a .env:
+Cambia el nombre del archivo env.example a .env en la raíz de tu proyecto. Este archivo contendrá tus credenciales sensibles.
+
+Obtener las credenciales de Cloudinary:
+Una vez que te hayas registrado en Cloudinary, dirígete al Dashboard de Cloudinary y copia estos tres datos:
+
+Cloud name
+API Key
+API Secret
+Agregar las credenciales al archivo .env:
+En tu archivo .env, coloca las siguientes variables de entorno con los valores que copiaste de Cloudinary:
+
+makefile
+Copiar código
+CLOUDINARY_CLOUD_NAME=tu_cloud_name
+CLOUDINARY_API_KEY=tu_api_key
+CLOUDINARY_API_SECRET=tu_api_secret
+Verificar que .gitignore tenga .env:
+Asegúrate de que el archivo .gitignore ya contenga la línea .env, para que este archivo no se suba a GitHub y tus credenciales permanezcan seguras. Si no está, agrégalo:
+
+bash
+Copiar código
+.env
+Instalar la dependencia dotenv:
+Si trabajas con Node.js, debes instalar dotenv para gestionar las variables de entorno. Usa el siguiente comando en tu terminal:
+
+bash
+Copiar código
+npm install dotenv
 ```
 
 ### 4. 🚀 Inicia la aplicación:
