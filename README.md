@@ -189,7 +189,7 @@ Algunas ideas para mejorar esta aplicación:
 **Autenticación de usuarios:** Permitir a los usuarios iniciar sesión para guardar sus memes favoritos.
 **Sistema de comentarios:** Añadir la posibilidad de comentar en los memes.
 **Compartir en redes sociales:** Integrar botones para compartir memes en plataformas como Facebook y Twitter.
-**Filtro y búsqueda:** Implementar funciones para filtrar y buscar memes por categorías o palabras clave.
+**Filtro y búsqueda:** Implementar funciones para filtrar y buscar memes por palabras clave.
 
 ## 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Si tienes sugerencias o encuentras algún problema, no dudes en abrir un issue o enviar un pull request. 🙌
