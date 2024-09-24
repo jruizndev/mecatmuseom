@@ -89,8 +89,8 @@ git clone https://github.com/tuusuario/MeCat.git
 
 
 ```bash git clone https://github.com/jruizndev/memecatmuseum.git
-```
 cd MeCat
+```
 
 ### 2. 🔧 **Instala las dependencias del proyecto:**
 Después de clonar el proyecto, instala las dependencias necesarias:
