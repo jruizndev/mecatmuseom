@@ -121,9 +121,9 @@ Para integrar Cloudinary, necesitas crear una cuenta en [Cloudinary](https://clo
 Una vez que tengas las credenciales de Cloudinary, agrégalas a tu archivo `.env` de la siguiente manera:
 
 ```makefile
-CLOUDINARY_CLOUD_NAME=tu_cloud_name
-CLOUDINARY_API_KEY=tu_api_key
-CLOUDINARY_API_SECRET=tu_api_secret
+VITE_CLOUDINARY_CLOUD_NAME=tu_cloud_name
+VITE_CLOUDINARY_API_KEY=tu_api_key
+VITE_CLOUDINARY_UPLOAD_PRESET=tu_api_secret
 ```
 ## 4. Verificar que `.gitignore` tenga `.env`
 
